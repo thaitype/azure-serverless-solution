@@ -1,0 +1,20 @@
+{
+  "name": "vanila-js-static-app-with-managed-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@types/node": "^20.x",
+    "typescript": "^5.5.4",
+    "rimraf": "^5.0.0"
+  }
+}

@@ -5,6 +5,7 @@
 
 ```
 npm install -g @azure/static-web-apps-cli
+npm run build 
 swa start src --api-location api
 ```
 

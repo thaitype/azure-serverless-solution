@@ -10,3 +10,6 @@ swa start src --api-location api
 ```
 
 https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript
+
+## Note
+Azure Functions v3

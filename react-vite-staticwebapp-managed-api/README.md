@@ -3,11 +3,16 @@
 To install dependencies:
 
 ```bash
-bun install
+pnpm install
 ```
 
 To run:
 
 ```bash
-bun dev
+pnpm dev
 ```
+
+
+then go to http://localhost:3000
+
+for API go to http://localhost:3030/api/hello

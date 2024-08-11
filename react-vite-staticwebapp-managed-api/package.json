@@ -4,20 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "run-p 'dev:*'",
+    "build": "run-s 'build:*'",
+    "build:web": "nx run web:build",
+    "dev": "run-p -l 'dev:*'",
     "dev:swa": "swa start  http://localhost:5173 --run \"cd apps/web && npm run dev\" --api-location apps/api --port 3000 --api-devserver-url http://127.0.0.1:3030",
-    "dev:function-watch": "bun --filter api watch", 
-    "dev:function": "func start --prefix apps/api/ --cors-credentials --port 3030"
+    "dev:func-watch": "nx run api:watch",
+    "dev:func": "func start --prefix apps/api/ --cors-credentials --port 3030",
+    "deploy": "swa deploy"
   },
   "devDependencies": {
     "@azure/static-web-apps-cli": "^2.0.1",
-    "@types/bun": "latest",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "nx": "^19.5.7"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "workspaces": [
-    "apps/*"
-  ]
+  }
 }

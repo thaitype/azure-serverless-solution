@@ -8,6 +8,8 @@ export const hello = app.http("hello", {
 
     const name = request.query.get("name") || (await request.text()) || "world";
 
-    return { body: `Hello, ${name}!` };
+    return { jsonBody: {
+      message: `Hello, ${name}! from Azure Functions API`,
+    } };
   },
 });

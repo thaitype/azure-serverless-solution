@@ -3,10 +3,12 @@
   "configurations": {
     "azure-staticwebapp": {
       "appLocation": "./apps/web/",
-      "apiLocation": "./server/",
+      "apiLocation": "./apps/api",
       "outputLocation": "./apps/web/dist/",
       "apiLanguage": "node",
-      "apiVersion": "20"
+      "apiVersion": "20",
+      "appName": "thw-demo-serverless-front",
+      "resourceGroup": "rg-demo-serverless-app"
     }
   }
 }

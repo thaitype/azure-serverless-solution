@@ -46,3 +46,5 @@ __pycache__/
 __blobstorage__
 __queuestorage__
 __azurite_db*__.json
+
+--api-location apps/api --port 3000 --api-devserver-url http://127.0.0.1:3030

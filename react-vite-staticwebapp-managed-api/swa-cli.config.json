@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "azure-staticwebapp": {
+      "appLocation": "./apps/web/",
+      "apiLocation": "./server/",
+      "outputLocation": "./apps/web/dist/",
+      "apiLanguage": "node",
+      "apiVersion": "20"
+    }
+  }
+}

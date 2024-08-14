@@ -5,13 +5,14 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "esbuild src/main.ts --bundle --platform=node --external:@azure/functions-core --outfile=dist/main.js",
-    "watch": "nodemon --watch src --ext ts --exec 'run-s build'",
+    "watch": "run-s build && nodemon --watch src --ext ts --exec 'run-s build'",
     "clean": "rimraf dist",
     "start": "func host start",
     "dev": "run-p watch start"
   },
   "dependencies": {
     "@azure/functions": "^4.5.0",
+    "@trpc/server": "^10.45.2",
     "trpc-azure-functions-adapter": "^0.0.5"
   },
   "devDependencies": {

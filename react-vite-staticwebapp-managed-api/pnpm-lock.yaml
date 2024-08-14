@@ -27,6 +27,9 @@ importers:
       '@azure/functions':
         specifier: ^4.5.0
         version: 4.5.0
+      '@trpc/server':
+        specifier: ^10.45.2
+        version: 10.45.2
       trpc-azure-functions-adapter:
         specifier: ^0.0.5
         version: 0.0.5
